@@ -1,0 +1,21 @@
+{
+    "name": "Elias Hezron pwa",
+    "short_name": "My PWA",
+    "start_url": "./",
+    "display": "standalone",
+    "background_color": "white",
+    "theme_color": "white",
+    "description": "A dead simple progressive web app",
+    "icons": [
+        {
+            "src": "icon_192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon_512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+     ]
+}
