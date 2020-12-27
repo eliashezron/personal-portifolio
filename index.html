@@ -237,7 +237,7 @@
     </div>
     </section>
     <script>
-        navigator.serviceWorker.register('sw.js')
+//         navigator.serviceWorker.register('sw.js')
         const hambuger =
 document.querySelector('.hambuger');
 // console.log(hambuger)
@@ -268,6 +268,16 @@ menu_items.forEach( (menu_item)=>{
         mobile_menu.classList.toggle('active')
     })
 })
+//         registering the service workers
+        self.addEventListener('install', function() {
+    console.log('Install!');
+  });
+  self.addEventListener("activate", event => {
+    console.log('Activate!');
+  });
+  self.addEventListener('fetch', function(event) {
+    console.log('Fetch!', event.request);
+  });
     </script>
 <!--     <script src="./app.js"/> -->
     
